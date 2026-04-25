@@ -48,7 +48,8 @@ The tool prints a table with the following columns:
 
 | Column | Description |
 |--------|-------------|
-| Model | Model name. `(β)` = beta, `(dep)` = deprecated. |
+| Model | Human-readable model name. `(β)` = beta, `(dep)` = deprecated. |
+| ID | Technical model ID used in API calls (e.g. `qwen-3-6-plus`) |
 | Vis | Supports vision / image input |
 | Reason | Supports reasoning |
 | Code | Optimized for code |

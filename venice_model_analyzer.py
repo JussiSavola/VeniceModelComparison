@@ -89,6 +89,7 @@ def build_rows(models: list) -> list[dict]:
 
         rows.append({
             "name": name,
+            "id": m.get("id", ""),
             "vis": fmt_bool(caps.get("supportsVision")),
             "reason": fmt_bool(caps.get("supportsReasoning")),
             "code": fmt_bool(caps.get("optimizedForCode")),
@@ -107,6 +108,7 @@ def build_rows(models: list) -> list[dict]:
 def render_table(rows: list[dict]) -> None:
     headers = {
         "name": "Model",
+        "id": "ID",
         "vis": "Vis",
         "reason": "Reason",
         "code": "Code",
